@@ -7,32 +7,36 @@
     <link href="./src/style.css" rel="stylesheet" />
   </head>
   <body class="bg-slate-950">
-    <div class="hero-section m-4">
+    <div
+      class="hero-section container lg:grid lg:grid-cols-[2fr_1fr] xl:grid-cols-[3fr_2fr] mx-auto mt-24 px-6"
+    >
       <div class="hero-left">
-        <div class="grid grid-cols-[auto_1fr] items-end gap-4 mb-4">
-          <div class="hero-left-content pb-8">
-            <p class="text-stone-50 mb-4">
+        <div
+          class="grid grid-cols-[1fr_auto] md:grid-cols-[auto_1fr] items-end gap-4 mb-6"
+        >
+          <div class="hero-left-img flex justify-start">
+            <img
+              class="rounded-4xl object-cover md:max-w-3xs"
+              src="/Frontent Developer Stephan Haak.jpg"
+              alt="Stephan Haak - Frontend Developer"
+            />
+          </div>
+          <div class="hero-left-content pl-6">
+            <p class="text-stone-50 text-2xl mb-6">
               Hi, ich bin <span class="font-extrabold">Stephan</span>.
             </p>
-            <h1 class="text-stone-50 text-2xl mb-4 h-14 text">
+            <h1 class="text-stone-50 text-4xl lg:text-6xl">
               Ihr neuer<br />Frontend Developer.
             </h1>
           </div>
-          <div class="hero-left-img flex justify-end">
-            <img
-              src="/Frontent Developer Stephan Haak.jpg"
-              alt="Stephan Haak - Frontend Developer"
-              class="w-30 rounded-lg"
-            />
-          </div>
         </div>
-        <p class="text-slate-400 text-xs">
+        <p class="text-slate-400 text-2xs mt-6">
           Nein Name ist Stephan Haak und ich bin Softwareentwickler mit dem
           Schwerpukt auf den Bereich Frontent Web Development aus der schönen
           Stadt Dresden. Ich liebe es, neue Dinge zu lernen und Idenn in die
           Realität zu bringen
         </p>
-        <div class="icons flex gap-4 py-4">
+        <div class="icons flex gap-6 mt-6">
           <a
             href="https://www.linkedin.com/in/mr-stephan-haak/"
             target="_blank"
@@ -76,28 +80,28 @@
             </svg>
           </a>
         </div>
-      </div>
-      <button
-        class="flex items-center gap-2 text-stone-50 bg-blue-600 p-2 rounded-md my-4 hover:bg-blue-500"
-      >
-        Projekte ansehen
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="size-5"
+        <button
+          class="flex items-center gap-2 text-stone-50 bg-blue-600 p-2 rounded-md mt-6 hover:bg-blue-500"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
-          />
-        </svg>
-      </button>
-      <div class="hero-right py-8">
-        <img src="/techs.png" alt="Tech-Stack Stephan Haak" />
+          Projekte ansehen
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="hero-right flex justify-center items-start my-6">
+        <img class="lg:w-lg" src="/techs.png" alt="Tech-Stack Stephan Haak" />
       </div>
     </div>
   </body>
