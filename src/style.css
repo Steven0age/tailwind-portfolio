@@ -28,4 +28,11 @@
   .badge {
     @apply inline-block px-3 py-1 mr-2 mb-2 rounded-full bg-slate-700 text-white text-sm;
   }
+  .btn {
+    @apply inline-flex items-center text-white text-base gap-2 px-5 py-3 rounded-md mt-6 lg:mt-10 cursor-pointer;
+  }
+
+  .btn-primary {
+    @apply bg-blue-600  hover:bg-blue-500;
+  }
 }
