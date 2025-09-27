@@ -9,7 +9,7 @@
   <body class="container main mx-auto mt-24 px-6">
     <section id="hero">
       <div class="lg:grid lg:grid-cols-[2fr_1fr] xl:grid-cols-[3fr_2fr]">
-        <div class="hero-left z-10">
+        <div class="hero-left">
           <div
             class="flex flex-col items-start md:grid md:grid-cols-[auto_1fr] md:items-end gap-4 mb-6"
           >
@@ -21,10 +21,10 @@
               />
             </div>
             <div class="hero-left-content md:pl-6">
-              <p class="text-white text-2xl">
+              <p class="text-white text-2xl bg-transparent relative z-10">
                 Hi, ich bin <span class="font-extrabold">Stephan</span>.
               </p>
-              <h1>
+              <h1 class="bg-transparent relative z-10">
                 Ihr neuer<br /><span
                   class="font-bold bg-gradient-to-r from-blue-500 to-green-500 text-transparent bg-clip-text"
                   >Frontend&nbsp;Developer</span
@@ -118,13 +118,34 @@
           meiner Fähigkeiten und Erfahrungen machen können.
         </p>
       </div>
-      <div class="projects mt-16 lg:mt-20">
-        <div class="single-project flex flex-col gap-4">
+      <div
+        class="projects mt-16 lg:mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12"
+      >
+        <div class="single-project flex flex-col gap-4 pb-6">
           <img src="./public/wetter_app.jpg" alt="wetter_app" />
           <h3>Moderne Wetter App</h3>
-          <a href="https://stephan-haak.com/wetterApp/"
-            >stephan-haak.com/wetterApp</a
+          <a
+            href="https://stephan-haak.com/wetterApp/"
+            target="_blank"
+            class="flex items-center group"
           >
+            stephan-haak.com/wetterApp
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="stroke-blue-500 w-5 h-5 ml-2 -mr-1 group-hover:stroke-blue-400"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+              ></path>
+            </svg>
+          </a>
+
           <p>
             Meine moderne Wetter App zeigt aktuelle Wetterdaten für Städte auf
             der ganzen Welt an. Die App wurde "mobile-first" entwickelt und für
@@ -132,11 +153,161 @@
             Orte in einer Favoritenliste zu speichern und diese Liste zu
             bearbeiten.
           </p>
-          <div>HTML JavaScript</div>
-          <button href="https://github.com/Steven0age/wetterApp">
+          <div>
+            <p class="badge">HTML</p>
+            <p class="badge">JavaScript</p>
+            <p class="badge">JavaScript</p>
+            <p class="badge">JavaScript</p>
+            <p class="badge">JavaScript</p>
+          </div>
+          <button
+            href="https://github.com/Steven0age/wetterApp"
+            target="_blank"
+            class="self-start"
+          >
             Code ansehen
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="bg-transparent size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+              />
+            </svg>
           </button>
         </div>
+        <div class="single-project flex flex-col gap-4 pb-6">
+          <img src="./public/witze_app.jpg" alt="wetter_app" />
+          <h3>Lustige Witze App</h3>
+          <a
+            href="https://stephan-haak.com/jokebox/"
+            target="_blank"
+            class="flex items-center group"
+          >
+            stephan-haak.com/jokebox
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="stroke-blue-500 w-5 h-5 ml-2 -mr-1 group-hover:stroke-blue-400"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+              ></path>
+            </svg>
+          </a>
+
+          <p>
+            Als Kind habe ich Witze-Bücher geliebt - Jetzt habe ich meine eigene
+            Witze-App entwickelt! Hierfür habe ich eine öffentliche API
+            verwendet, um die Witze dynamisch zu laden und anzuzeigen. Das
+            Design ist auf Mobilgeräte optimiert und nach SCSS Best Practices
+            optimiert.
+          </p>
+          <div>
+            <p class="badge">HTML</p>
+            <p class="badge">JavaScript</p>
+            <p class="badge">JavaScript</p>
+            <p class="badge">JavaScript</p>
+            <p class="badge">JavaScript</p>
+          </div>
+          <button
+            href="https://github.com/Steven0age/jokebox"
+            target="_blank"
+            class="self-start"
+          >
+            Code ansehen
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="bg-transparent size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="single-project flex flex-col gap-4 pb-6">
+          <img src="./public/wetter_app.jpg" alt="wetter_app" />
+          <h3>Moderne Wetter App</h3>
+          <a
+            href="https://stephan-haak.com/wetterApp/"
+            target="_blank"
+            target="_blank"
+            class="flex items-center group"
+          >
+            stephan-haak.com/wetterApp
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="stroke-blue-500 w-5 h-5 ml-2 -mr-1 group-hover:stroke-blue-400"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+              ></path>
+            </svg>
+          </a>
+
+          <p>
+            Meine moderne Wetter App zeigt aktuelle Wetterdaten für Städte auf
+            der ganzen Welt an. Die App wurde "mobile-first" entwickelt und für
+            Mobilgeräte aller Art optimiert. Der Nutzer hat die Möglichkeit,
+            Orte in einer Favoritenliste zu speichern und diese Liste zu
+            bearbeiten.
+          </p>
+          <div>
+            <p class="badge">HTML</p>
+            <p class="badge">JavaScript</p>
+            <p class="badge">JavaScript</p>
+            <p class="badge">JavaScript</p>
+            <p class="badge">JavaScript</p>
+          </div>
+          <button
+            href="https://github.com/Steven0age/wetterApp"
+            target="_blank"
+            target="_blank"
+            class="self-start"
+          >
+            Code ansehen
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="bg-transparent size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="min-h-80"></div>
       </div>
     </div>
   </body>
