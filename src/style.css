@@ -4,21 +4,23 @@
   * {
     @apply text-white scroll-smooth;
   }
-  button {
-    @apply flex items-center gap-2 bg-blue-600 px-5 py-3 rounded-md mt-6 lg:mt-10 hover:bg-blue-500 cursor-pointer;
-  }
+
   p {
     @apply text-slate-400 text-base lg:text-lg;
   }
+
   a {
     @apply text-base lg:text-lg text-blue-500 hover:text-blue-400;
   }
+
   h1 {
     @apply mt-6 text-3xl sm:text-4xl lg:text-6xl;
   }
+
   h2 {
-    @apply mt-6 text-3xl sm:text-4xl lg:text-6xl font-bold;
+    @apply mt-6 text-3xl lg:text-4xl xl:text-5xl font-bold;
   }
+
   h3 {
     @apply text-2xl mt-5 lg:text-3xl font-bold;
   }
@@ -28,6 +30,7 @@
   .badge {
     @apply inline-block px-3 py-1 mr-2 mb-2 rounded-full bg-slate-700 text-white text-sm;
   }
+
   .btn {
     @apply inline-flex items-center text-white text-base gap-2 px-5 py-3 rounded-md mt-6 lg:mt-10 cursor-pointer;
   }
