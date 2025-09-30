@@ -13,6 +13,10 @@
     @apply text-base lg:text-lg text-blue-500 hover:text-blue-400;
   }
 
+  section {
+    @apply my-20 lg:my-44;
+  }
+
   h1 {
     @apply mt-6 text-3xl sm:text-4xl lg:text-6xl;
   }
